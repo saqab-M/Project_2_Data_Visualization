@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-x_values = range(1, 5_001)
+x_values = range(1, 50_001)
 y_values = [x**2 for x in x_values]
 
 plt.style.use("seaborn")
@@ -15,6 +15,6 @@ ax.set_ylabel("Sqare of value", fontsize=14)
 #set size of tick labels
 #ax.tick_params(axis="both",which="major", labelsize=14)
 
-ax.axis([0, 5_010, 0, 25000000])
+ax.axis([0, 50_010, 0, 1_500_000_000])
 
-plt.savefig("squares_plot.png", bbox_inches="tight")
+plt.savefig("squares-test_plot.png", bbox_inches="tight")
